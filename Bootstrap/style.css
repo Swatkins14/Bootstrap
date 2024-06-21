@@ -1,0 +1,33 @@
+body {
+    padding-top: 56px;
+}
+.header {
+    background: #1f3c5a;
+    color: rgb(208, 208, 208);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.navbar {
+    z-index: 1000;
+}
+
+.section {
+    padding: 60px 0;
+}
+.footer {
+    background: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.carousel {
+    margin-top: 100px;
+}
+
+.carousel-item img {
+    width: 100%; 
+    height: auto; 
+}
+
