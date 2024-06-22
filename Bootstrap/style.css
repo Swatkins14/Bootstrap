@@ -26,8 +26,18 @@ body {
     margin-top: 100px;
 }
 
+#carouselExample {
+      width: 500px; 
+      height: 250px; 
+      margin: auto;
+}
+
 .carousel-item img {
     width: 100%; 
     height: auto; 
 }
 
+.card {
+    width: 120px;
+    height: 120px;
+}

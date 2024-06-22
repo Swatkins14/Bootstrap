@@ -5,42 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap Website</title>
   <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav class="navbar justify-content-center navbar-expand-lg navbar-light bg-light nav-underline">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <!-- Main Content -->
   <div class="container mt-5">
     <div class="row">
       <div class="col-md-12">
-        <h1>Welcome to Bootstrap</h1>
-        <p>This is a simple template to get you started with Bootstrap.</p>
+        <h1>Favourite TV Shows</h1>
+        <h3  class="text-body-secondary">A Guide to the who/what/when/where and why of my favourite TV shows</h3>
+        <br>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://media.vanityfair.com/photos/5632243948e293545c72c168/master/w_2240,c_limit/david-tennant-catherine-tate-doctor-who.jpg" class="d-block w-100" alt="Doctor Who">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.indiewire.com/wp-content/uploads/2020/08/BoJackHorseman_Season6_Episode15_00_24_12_20.jpg" class="d-block w-100" alt="Bojack Horseman">
+              </div>
+              <div class="carousel-item">
+                <img src="https://pyxis.nymag.com/v1/imgs/ca3/511/51eb0123af72c1d58a45fb140c11a151e0-16-fleabag.2x.rhorizontal.w700.jpg" class="d-block w-100" alt="Fleabag">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
       </div>
     </div>
   </div>
+
+<!-- Cards -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://thedoctorwhocompanion.com/wp-content/uploads/2022/06/10th-Tenth-Doctor-Donna-Noble-Series-4.jpg" class="card-img-top" alt="Doctor Who">
+                <div class="card-body">
+                    <h5 class="card-title">Doctor Who</h5>
+                    <p class="card-text">The tales of a alien called The Doctor and his adventures in time and space.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-primary" style="--bs-text-opacity: .8;">2005 - Current</li>
+                    <li class="list-group-item text-primary" style="--bs-text-opacity: .8;">Showrunners: Russell T Davies, Steven Moffatt, Chris Chibnall</li>
+                    <li class="list-group-item text-primary" style="--bs-text-opacity: .8;">BBC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/3/2017/06/141826.10358e54-ec96-48ff-91d7-ad65dbdf1b43.jpg?quality=90&webp=true&resize=620,414" class="card-img-top" alt="Bojack Horseman">
+                <div class="card-body">
+                    <h5 class="card-title">Bojack Horseman</h5>
+                    <p class="card-text">Washed-up TV star, Bojack Horseman, goes through the misfortunes of life and the bad choices made in response to them.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-success" style="--bs-text-opacity: .8;">2014 - 2020</li>
+                    <li class="list-group-item text-success" style="--bs-text-opacity: .8;">Created by Raphael Bob-Waksberg</li>
+                    <li class="list-group-item text-success" style="--bs-text-opacity: .8;">Netflix</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://ichef.bbci.co.uk/images/ic/1200x675/p071whw0.jpg" class="card-img-top" alt="Fleabag">
+                <div class="card-body">
+                    <h5 class="card-title">Fleabag</h5>
+                    <p class="card-text">A woman, known only as Fleabag, has no filter as she navigates life and love in London while trying to cope with tragedy.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-danger">2016 - 2019</li>
+                    <li class="list-group-item text-danger">Created by Phoebe Waller-Bridge</li>
+                    <li class="list-group-item text-danger">BBC</li>
+                </ul>
+        </div>
+    </div>
+</div>
 
   <!-- Footer -->
   <footer class="bg-light text-center text-lg-start mt-5">
