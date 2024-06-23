@@ -1,5 +1,6 @@
 body {
     padding-top: 56px;
+    padding-bottom: 56px;
 }
 .header {
     background: #1f3c5a;
@@ -8,36 +9,3 @@ body {
     text-align: center;
 }
 
-.navbar {
-    z-index: 1000;
-}
-
-.section {
-    padding: 60px 0;
-}
-.footer {
-    background: #343a40;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.carousel {
-    margin-top: 100px;
-}
-
-#carouselExample {
-      width: 500px; 
-      height: 250px; 
-      margin: auto;
-}
-
-.carousel-item img {
-    width: 100%; 
-    height: auto; 
-}
-
-.card {
-    width: 120px;
-    height: 120px;
-}
